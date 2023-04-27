@@ -186,7 +186,7 @@ body, p, ol li, ul li, dl dd, .fl-callout-text {
   overflow: hidden;
   color: white;
   text-shadow: 0 0 5px #C8C8C8;
-	border: solid rgba(85, 183, 78, 0.8);
+	border: solid yellowgreen;
 	box-shadow: 1px 1px 1px #00ff00, 0 0 1vmin #00ff00, 0 0 1px #00ff00;
 	border-radius: 10px;
 }
@@ -209,6 +209,10 @@ body, p, ol li, ul li, dl dd, .fl-callout-text {
 #menu-toggle {
 	text-shadow: 0 0 5px #C8C8C8;
 	animation: flicker 0.5s infinite;
+}
+
+.site-description {
+	color: yellowgreen;
 }
 
 .site-description::after {
