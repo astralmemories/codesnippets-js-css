@@ -95,21 +95,25 @@ a:hover, hr {
   color: #00ff00;
 }
 
+/*
 #page {
   font-family: 'Share Tech Mono', monospace;
 }
+*/
 
 .side-masthead {
   font-family: 'VT323', monospace !important;
   background: rgba(0, 0, 0, .3);
 }
 
+/*
 h1, h2, h3, h4, h5, h6, label, legend, table th, dl dt, .entry-title, .widget-title {
   font-family: 'VT323', monospace !important;
 }
+*/
 
 blockquote, .entry-meta, .entry-footer, .comment-list li .comment-meta .says, .comment-list li .comment-metadata, .comment-reply-link, #respond .logged-in-as {
-  font-family: 'VT323', monospace !important;
+  /* font-family: 'VT323', monospace !important; */
   font-size: 18px;
 }
 
@@ -183,7 +187,7 @@ button:hover {
 }
 
 body, p, ol li, ul li, dl dd, .fl-callout-text {
-  font-family: 'VT323', monospace !important;
+  font-family: "Ubuntu", sans-serif !important;
 }
 
 .site-title-wrapper {
@@ -394,7 +398,7 @@ body, p, ol li, ul li, dl dd, .fl-callout-text {
 /* Main Navigation */
 
 .main-navigation ul li a, .main-navigation ul li a:visited, button, a.button, a.fl-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  font-family: 'VT323', monospace !important;
+  font-family: "Kode Mono", monospace !important;
 }
 
 #menu-primary-menu .menu-item {
@@ -594,6 +598,8 @@ body {
 
 .wp-block-search__input {
   font-family: 'VT323', monospace !important;
+  font-size: xx-large;
+  border: 2px solid #1aff00 !important;
 }
 
 
@@ -623,7 +629,7 @@ body::after {
 
 pre code,
 pre .line-number {
-  font: normal normal 12px/14px "Courier New", Courier, Monospace;
+  font-family: "Kode Mono", monospace !important;
   color: darkgreen;
   display: block;
 }

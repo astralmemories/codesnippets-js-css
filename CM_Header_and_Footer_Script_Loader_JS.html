@@ -1,3 +1,13 @@
+<!--
+< script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script >
+
+ < script>
+$(".wp-block-code code").html(function (index, html) {
+    return html.replace(/^(.*)$/mg, "<span class=\"line\">$1</span>")
+});
+</script > 
+-->
+
 <!-- https://jsfiddle.net/tovic/AbpRD/  -->
 <script>
 	(function() {
@@ -12,7 +22,13 @@
    		}
 	})();
 
-	document.getElementsByName("s")[0].placeholder="C:\\>";
+
+var element =  document.getElementsByName("s")[0];
+if (typeof(element) != 'undefined' && element != null)
+{
+  document.getElementsByName("s")[0].placeholder="C:\\>";
+}
+	// document.getElementsByName("s")[0].placeholder="C:\\>";
 </script>
 
 
@@ -21,7 +37,7 @@
 
     for (i = 0; i < document.getElementsByClassName("site-info-text").length; i++) {
 
-        var yourHTML = '<br><br>Copyright © 2023 Code Snippets — Free Web Tools by <a href="https://astralmemories.com" target="_blank" class="footer-copyright-link">Astral Memories</a>';
+        var yourHTML = '<br><br>Copyright © 2025 Code Snippets — Free Web Tools by <a href="https://astralmemories.com" target="_blank" class="footer-copyright-link">Astral Memories</a>';
 
         document.getElementsByClassName("site-info-text")[i].innerHTML = yourHTML;
 
@@ -36,6 +52,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="crossorigin="anonymous"></script>
 
@@ -78,7 +95,7 @@
         ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
         ctx.fillRect(0, 0, c.width, c.height);
 
-        ctx.fillStyle = "#0F0"; //green text
+        ctx.fillStyle = "yellowgreen"; //green text
         ctx.font = font_size + "px arial";
         // Looping over drops
         for (var i = 0; i < drops.length; i++)
