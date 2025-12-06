@@ -1,0 +1,59 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    //console.log("DOMContentLoaded fired.");
+
+    jQuery(function($) {
+
+        //console.log("jQuery ready.");
+
+        const articles = $('article.type-post');
+
+        //console.log("Found articles:", articles.length);
+
+        articles.each(function(index) {
+
+            //console.log(`\n--- Processing article ${index + 1} ---`);
+
+            const article = $(this);
+
+            // 1. Check featured image
+            const featured = article.find('.featured-image');
+            //console.log("featured-image exists?", featured.length);
+
+            if (!featured.length) {
+                //console.warn("Skipping: no .featured-image found in this article.");
+                return;
+            }
+
+            // 2. Select elements to move
+            const elementsToMove = article.find('.entry-header, .entry-meta, .entry-summary, .entry-footer');
+
+            //console.log("Elements to move found:", elementsToMove.length);
+            elementsToMove.each(function(i) {
+                //console.log(" - Found element:", $(this).prop("className"));
+            });
+
+            if (!elementsToMove.length) {
+                //console.warn("Skipping: No target elements found.");
+                return;
+            }
+
+            // 3. Create new wrapper
+            const wrapper = $('<div class="post-right-column"></div>');
+            //console.log("Created wrapper: .post-right-column");
+
+            // 4. Move elements into wrapper
+            wrapper.append(elementsToMove);
+            //console.log("Moved elements into wrapper.");
+
+            // 5. Insert the wrapper after the featured image
+            featured.after(wrapper);
+            //console.log("Inserted wrapper after featured-image.");
+
+            //console.log("--- Finished processing article ---");
+
+        });
+    });
+});
+</script>

@@ -66,6 +66,15 @@ h1 {
   padding: 0.5rem 3.5rem !important;
 }
 
+.site-main article::after {
+    display: inline-block;
+    content: "";
+    border-top: .3rem double var(--main-border-color);
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    transform: translateY(-1rem);
+}
+
 .wp-block-search__inside-wrapper {
   flex-flow: row;
   align-items: baseline;
@@ -682,4 +691,10 @@ pre .cl {
   .entry-content p, .entry-summary p, .content p {
     line-height: 26px !important;
   }
+}
+
+.featured-image img {
+  border: solid var(--main-border-color);
+  box-shadow: 1px 1px 1px #00ff00, 0 0 1vmin #00ff00, 0 0 1px #00ff00;
+  border-radius: 10px;
 }
