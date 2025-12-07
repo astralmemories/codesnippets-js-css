@@ -130,9 +130,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
+/*
 ul, ol, dl {
   line-height: 1;
 }
+*/
 
 .footer-menu ul li a:hover, .footer-menu ul li a:visited:hover {
   color: #00ff00;
